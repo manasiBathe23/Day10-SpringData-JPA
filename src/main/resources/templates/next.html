@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>next</title>
+</head>
+<body>
+Next Page
+<form action="/someservice" method="post">
+    <table style="border:2px black solid">
+        <tr th:each="obj:${data}">
+            <td th:text="${obj.user}"></td>
+            <td th:text="${obj.pass}"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
